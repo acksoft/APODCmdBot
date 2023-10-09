@@ -1,0 +1,40 @@
+{
+    "type": "AdaptiveCard",
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "version": "1.4",
+    "body": [
+      {
+        "type": "TextBlock",
+        "size": "large",
+        "weight": "Bolder",
+        "text": "${title}"
+      },
+      {
+        "type": "TextBlock",
+        "text": "${date}",
+        "wrap": true
+      },
+      {
+        "type": "TextBlock",
+        "text": "${copyright}",
+        "wrap": true
+      },
+      {
+        "type": "Image",
+        "url": "${url}"
+      },
+      {
+        "type": "TextBlock",
+        "text": "${explanation}",
+        "wrap": true
+      }
+    ],
+    "actions": [
+      {
+        "type": "Action.OpenUrl",
+        "title": "View live data at NASA",
+        "url": "https://apod.nasa.gov/apod/astropix.html"
+      }
+    ]
+  }
+  
